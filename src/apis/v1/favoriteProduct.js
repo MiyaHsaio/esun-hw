@@ -6,7 +6,7 @@ export const postFavoriteProductFilter = (
   { pageIndex, pageSize, sortByAsc, sortName, filterItems }
 ) => {
   return request({
-    url: `${versionUrl}/finance/Filter`,
+    url: `${versionUrl}/favoriteProduct/Filter`,
     method: "POST",
     data: {
       pageIndex,
@@ -22,7 +22,7 @@ export const postFavoriteProduct = (
   { name, price, feeRate, account, quantity }
 ) => {
   return request({
-    url: `${versionUrl}/finance`,
+    url: `${versionUrl}/favoriteProduct`,
     method: "POST",
     data: { name, price, feeRate, account, quantity },
   });
@@ -33,7 +33,7 @@ export const putFavoriteProduct = (
   { name, price, feeRate, account, quantity }
 ) => {
   return request({
-    url: `${versionUrl}/finance/${id}`,
+    url: `${versionUrl}/favoriteProduct/${id}`,
     method: "PUT",
     data: { name, price, feeRate, account, quantity },
   });
@@ -41,14 +41,14 @@ export const putFavoriteProduct = (
 
 export const getFavoriteProduct = ( id) => {
   return request({
-    url: `${versionUrl}/finance/${id}`,
+    url: `${versionUrl}/favoriteProduct/${id}`,
     method: "GET",
   });
 };
 
 export const deleteFavoriteProduct = (id) => {
   return request({
-    url: `${versionUrl}/finance/${id}`,
+    url: `${versionUrl}/favoriteProduct/${id}`,
     method: "DELETE",
   });
 };

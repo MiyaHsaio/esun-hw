@@ -1,0 +1,6 @@
+CREATE TABLE [User] (
+    UserID VARCHAR(20) PRIMARY KEY,
+    UserName VARCHAR(50) NOT NULL,
+    Email VARCHAR(100) NOT NULL,
+    Account VARCHAR(20) NOT NULL
+);

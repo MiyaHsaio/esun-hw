@@ -1,0 +1,10 @@
+CREATE TABLE LikeList (
+    SN INT IDENTITY(1,1) PRIMARY KEY,
+    UserID VARCHAR(20) NOT NULL,
+    Quantity INT NOT NULL,
+    Account VARCHAR(20) NOT NULL,
+    TotalFee DECIMAL(18,2) NOT NULL,
+    TotalAmount DECIMAL(18,2) NOT NULL,
+    FOREIGN KEY (UserID) REFERENCES [User](UserID),
+    FOREIGN KEY (ProductNo) REFERENCES Product(No)
+);
