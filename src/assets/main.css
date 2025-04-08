@@ -1,0 +1,23 @@
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #007bff;
+}
+
+.btn {
+  min-width: 100px;
+}
+
+.table th,
+.table td {
+  vertical-align: middle;
+}
+
+.blank {
+  margin-top: 50px;
+}
